@@ -1,0 +1,9 @@
+{
+    "name": "dariia/patterns_full",
+    "type": "project",
+    "require": {},
+    "autoload": {
+        "psr-4": {"App\\": "src/"}
+    }
+}
+
