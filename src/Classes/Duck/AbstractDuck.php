@@ -7,7 +7,7 @@ namespace App\Classes\Duck;
 use App\Interfaces\FlyBehavior;
 use App\Interfaces\QuackBehavior;
 
-abstract class Duck
+abstract class AbstractDuck
 {
     protected $quackBehavior;
 
