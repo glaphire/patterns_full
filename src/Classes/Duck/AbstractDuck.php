@@ -9,13 +9,23 @@ use App\Interfaces\QuackBehavior;
 
 abstract class AbstractDuck
 {
+    /**
+     * @var QuackBehavior $quackBehavior
+     */
     protected $quackBehavior;
 
+    /**
+     * @var FlyBehavior $flyBehavior
+     */
     protected $flyBehavior;
 
-    public function __construct(QuackBehavior $quackBehavior, FlyBehavior $flyBehavior)
+    public function setQuackBehavior(QuackBehavior $quackBehavior)
     {
         $this->quackBehavior = $quackBehavior;
+    }
+
+    public function setFlyBehavior(FlyBehavior $flyBehavior)
+    {
         $this->flyBehavior = $flyBehavior;
     }
 
