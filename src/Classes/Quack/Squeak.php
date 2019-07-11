@@ -10,6 +10,6 @@ class Squeak implements QuackBehavior
 {
     public function quack()
     {
-        print_r("Squeaking");
+        print_r("Squeaking\n");
     }
 }

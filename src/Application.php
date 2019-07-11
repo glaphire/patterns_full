@@ -2,10 +2,18 @@
 
 namespace App;
 
+use App\Classes\Duck\ModelDuck;
+use App\Classes\Fly\FlyRocketPowered;
+
 class Application
 {
     public function run()
     {
-        echo "something is running here\n";
+        $modelDuck = new ModelDuck();
+
+        $modelDuck->performFly();
+        $modelDuck->setFlyBehavior(new FlyRocketPowered());
+        $modelDuck->performFly();
+        $modelDuck->performQuack();
     }
 }

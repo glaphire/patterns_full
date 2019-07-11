@@ -10,6 +10,6 @@ class Quack implements QuackBehavior
 {
     public function quack()
     {
-        print_r("Quack with sound");
+        print_r("Quack with sound\n");
     }
 }

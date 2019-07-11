@@ -10,6 +10,6 @@ class MuteQuack implements QuackBehavior
 {
     public function quack()
     {
-        print_r("Mute quacking");
+        print_r("Mute quacking\n");
     }
 }

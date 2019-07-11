@@ -10,6 +10,6 @@ class FlyNoWay implements FlyBehavior
 {
     public function fly()
     {
-        print_r("Fly no way");
+        print_r("Fly no way\n");
     }
 }
