@@ -15,6 +15,7 @@ class CurrentConditionsDisplay implements ObserverInterface, DisplayElementInter
     public function __construct(SubjectInterface $weatherData)
     {
         $this->weatherData = $weatherData;
+        $weatherData->registerObserver($this);
     }
 
     public function update(float $temperature, float $humidity, float $pressure)
