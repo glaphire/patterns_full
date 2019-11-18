@@ -1,0 +1,3 @@
+2019-11-18 21:57:29: users:init with data "\/home\/dariia\/Code\/php\/patterns_full\/src\/users.csv"
+2019-11-18 21:57:30: users:created with data {"attributes":{"name":"John Smith","email":"john99@example.com","id":"c95279b223a4cc9bad2a05284cfe300a"}}
+2019-11-18 21:57:30: users:deleted with data {"attributes":{"name":"John Smith","email":"john99@example.com","id":"c95279b223a4cc9bad2a05284cfe300a"}}
