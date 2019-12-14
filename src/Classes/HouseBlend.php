@@ -11,13 +11,13 @@ class HouseBlend extends AbstractBeverage
         $this->description = "House Blend Coffee";
     }
 
+    public function getDescription(): string
+    {
+        return $this->description;
+    }
+
     public function cost(): float
     {
         return 0.89;
-    }
-
-    public function getDescription(): string
-    {
-        return $this->getDescription();
     }
 }
