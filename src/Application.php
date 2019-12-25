@@ -26,5 +26,6 @@ class Application
 
         echo "Client: now I've got a decorated component:\n";
         $this->clientCode($decorator2);
+        echo PHP_EOL;
     }
 }

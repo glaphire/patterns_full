@@ -10,7 +10,7 @@ class ConcreteComponent implements ComponentInterface
 {
     public function operation(): string
     {
-        return "Concrete Component\n";
+        return "Concrete Component";
     }
 }
 
