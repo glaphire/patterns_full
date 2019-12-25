@@ -2,10 +2,14 @@
 
 namespace App;
 
+use App\Classes\PizzaStore;
+
 class Application
 {
     public function run()
     {
-        echo "something is running here\n";
+        $store = new PizzaStore();
+
+        $store->orderPizza("pepperoni");
     }
 }

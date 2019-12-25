@@ -10,17 +10,20 @@ abstract class AbstractPizza
 
     public function prepare()
     {
-        $lastIngredient = array_pop($this->getIngredients());
-        $ingredients = implode($this->getIngredients(), ", ") . "and " . $lastIngredient;
+        $allIngredients = $this->getIngredients();
+        $lastIngredient = array_pop($allIngredients);
+        $ingredients = implode($allIngredients, ", ") . "and " . $lastIngredient;
         echo "Preparing " . $ingredients . PHP_EOL;
     }
 
     public function bake() {
-        echo "Baking " . static::class . "pizza" . PHP_EOL;
+        $pathArray = explode('\\', get_class($this));
+        $class = array_pop($pathArray);
+        echo "Baking " . $class . PHP_EOL;
     }
 
     public function cut() {
-        echo "Cutting into " . $this->piecesAmount . "pieces" . PHP_EOL;
+        echo "Cutting into " . $this->piecesAmount . " pieces" . PHP_EOL;
     }
 
     abstract public function getIngredients(): array;

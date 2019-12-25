@@ -8,7 +8,7 @@ class PepperoniPizza extends AbstractPizza
 {
     public function getIngredients(): array
     {
-        return ["salami, cheese, tomato"];
+        return ["salami", "cheese", "tomato"];
     }
 
     public function box()

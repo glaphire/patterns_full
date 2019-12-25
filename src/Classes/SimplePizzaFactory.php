@@ -12,14 +12,16 @@ class SimplePizzaFactory
     {
         switch ($type) {
             case "veggie":
-                $pizza = new VeggiePizza();
+                $this->pizza = new VeggiePizza();
                 break;
             case "pepperoni":
-                $pizza = new PepperoniPizza();
+                $this->pizza = new PepperoniPizza();
                 break;
             default:
                 throw new \Exception("Undefined pizza type requested");
         }
+
+        return $this->pizza;
     }
 }
 
