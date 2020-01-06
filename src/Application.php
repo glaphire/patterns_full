@@ -8,7 +8,7 @@ class Application
 {
     public function run(AbstractFactoryInterface $factory)
     {
-        $factory->createProductA();
-        $factory->createProductB();
+        $factory->createProductA()->usefulFunctionA();
+        $factory->createProductB()->usefulFunctionB();
     }
 }
