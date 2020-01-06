@@ -5,9 +5,9 @@ namespace App\Classes;
 
 use App\Interfaces\AbstractProductA;
 use App\Interfaces\AbstractProductB;
-use App\Interfaces\AbstractFactoryInteface;
+use App\Interfaces\AbstractFactoryInterface;
 
-class ConcreteFactory1 implements AbstractFactoryInteface
+class ConcreteFactory1 implements AbstractFactoryInterface
 {
 
     public function createProductA(): AbstractProductA

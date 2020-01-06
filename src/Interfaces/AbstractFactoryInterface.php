@@ -4,7 +4,7 @@
 namespace App\Interfaces;
 
 
-interface AbstractFactoryInteface
+interface AbstractFactoryInterface
 {
     public function createProductA(): AbstractProductA;
 

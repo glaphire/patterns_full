@@ -2,10 +2,13 @@
 
 namespace App;
 
+use App\Interfaces\AbstractFactoryInterface;
+
 class Application
 {
-    public function run()
+    public function run(AbstractFactoryInterface $factory)
     {
-        echo "something is running here\n";
+        $factory->createProductA();
+        $factory->createProductB();
     }
 }
