@@ -2,13 +2,14 @@
 
 namespace App;
 
-use App\Interfaces\AbstractFactoryInterface;
+use App\Classes\ConcreteFactory1;
+use App\Classes\ConcreteFactory2;
 
 class Application
 {
-    public function run(AbstractFactoryInterface $factory)
+    public function run()
     {
-        $factory->createProductA()->usefulFunctionA();
-        $factory->createProductB()->usefulFunctionB();
+        (new ConcreteFactory1())->createProduct()->usefulFunction();
+        (new ConcreteFactory2())->createProduct()->usefulFunction();
     }
 }

@@ -8,5 +8,4 @@ use App\Classes\ConcreteFactory2;
 
 $application = new Application();
 
-$application->run(new ConcreteFactory1());
-$application->run(new ConcreteFactory2());
+$application->run();

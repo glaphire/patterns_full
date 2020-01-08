@@ -3,20 +3,14 @@
 
 namespace App\Classes;
 
-use App\Interfaces\AbstractProductA;
-use App\Interfaces\AbstractProductB;
+use App\Interfaces\AbstractProduct;
 use App\Interfaces\AbstractFactoryInterface;
 
 class ConcreteFactory2 implements AbstractFactoryInterface
 {
 
-    public function createProductA(): AbstractProductA
+    public function createProduct(): AbstractProduct
     {
-        return new ConcreteProductA2;
-    }
-
-    public function createProductB(): AbstractProductB
-    {
-        return new ConcreteProductB2;
+        return new ConcreteProduct2;
     }
 }
