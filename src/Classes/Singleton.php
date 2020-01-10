@@ -1,43 +1,33 @@
-<?php
-
+<?php declare(strict_types=1);
 
 namespace App\Classes;
 
-
-class Singleton
+final class Singleton
 {
-    private static $instances = [];
+    private static ?Singleton $instance = null;
+
+    private function __construct() {}
 
     /**
-     * Singleton can't be instantiated
+     * Gets the instance via lazy initialization (created at first usage)
+     * @return Singleton
      */
-    protected function __construct()
-    {
-    }
-
-    /**
-     * Singleton can't be cloned
-     */
-    protected function __clone()
-    {
-    }
-
-    /**
-     * Singleton shouldn't be recovered from a string
-     * @throws \Exception
-     */
-    public function __wakeup()
-    {
-        throw new \Exception("Cannot unserialize a singleton");
-    }
-
     public static function getInstance(): Singleton
     {
-        $cls = static::class;
-        if (!isset(static::$instances[$cls])) {
-            static::$instances[$cls] = new static;
+        if (static::$instance === null) {
+            static::$instance = new static;
         }
 
-        return static::$instances[$cls];
+        return static::$instance;
     }
+
+    /**
+     * prevent to being cloned (to create second instance)
+     */
+    private function __clone() {}
+
+    /**
+     * prevent to being unserialized (to create second instance)
+     */
+    private function __wakeup() {}
 }
