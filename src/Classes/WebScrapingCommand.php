@@ -17,7 +17,10 @@ abstract class WebScrapingCommand implements Command
      */
     public $url;
 
-    public function __construct(string $url)
+    /**
+     * @ignore
+     */
+    public function __construct(string $url = null)
     {
         $this->url = $url;
     }

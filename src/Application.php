@@ -2,10 +2,23 @@
 
 namespace App;
 
+use App\Classes\Queue;
+use App\Classes\IMDBGenresScrapingCommand;
+
 class Application
 {
     public function run()
     {
-        echo "something is running here\n";
+        /**
+         * Клиентский код.
+         */
+
+        $queue = Queue::get();
+
+        if ($queue->isEmpty()) {
+            $queue->add(new IMDBGenresScrapingCommand);
+        }
+
+        $queue->work();
     }
 }
