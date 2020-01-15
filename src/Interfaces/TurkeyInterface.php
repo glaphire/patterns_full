@@ -2,7 +2,7 @@
 
 namespace App\Interfaces;
 
-interface Turkey
+interface TurkeyInterface
 {
     public function gobble(): void;
 

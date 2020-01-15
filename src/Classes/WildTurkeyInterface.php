@@ -2,9 +2,9 @@
 
 namespace App\Classes;
 
-use App\Interfaces\Turkey;
+use App\Interfaces\TurkeyInterface;
 
-class WildTurkey implements Turkey
+class WildTurkeyInterface implements TurkeyInterface
 {
     public function gobble(): void
     {
