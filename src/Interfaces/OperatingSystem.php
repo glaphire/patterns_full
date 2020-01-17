@@ -4,7 +4,10 @@
 namespace App\Interfaces;
 
 
-class OperatingSystem
+interface OperatingSystem
 {
+    public function halt();
 
+    public function getName(): string;
 }
+
