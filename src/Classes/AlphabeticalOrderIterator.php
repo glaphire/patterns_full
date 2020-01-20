@@ -6,7 +6,9 @@ namespace App\Classes;
 
 class AlphabeticalOrderIterator implements \Iterator
 {
-
+    /**
+     * @var WordsCollection
+     */
     private $collection;
     /**
      * @var int keeps current iteration position
