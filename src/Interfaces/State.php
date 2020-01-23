@@ -11,4 +11,6 @@ interface State
     public function turnCrank();
 
     public function dispense();
+
+    public function refill();
 }

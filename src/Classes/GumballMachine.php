@@ -79,7 +79,7 @@ class GumballMachine
 
     public function getCount()
     {
-        $this->getCount();
+        $this->count;
     }
 
 
@@ -97,7 +97,7 @@ class GumballMachine
             . "\nInventory: " . $this->count . " gumball";
 
         if ($this->count != 1) {
-            echo "s";
+            $result .= "s";
         }
 
         echo "\nMachine is " . $this->state . "\n";
