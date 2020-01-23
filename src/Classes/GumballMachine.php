@@ -81,4 +81,17 @@ class GumballMachine
     {
         $this->getCount();
     }
+
+    public function __toString()
+    {
+        echo "\nMighty Gumball, Inc."
+            . "\nPHP-enabled Standing Gumball Model #2004"
+            . "\nInventory: " . $this->count . " gumball";
+
+        if ($this->count != 1) {
+            echo "s";
+        }
+
+        echo "\nMachine is " . $this->state . "\n";
+    }
 }

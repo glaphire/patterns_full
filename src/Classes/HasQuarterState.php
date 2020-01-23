@@ -36,4 +36,9 @@ class HasQuarterState implements State
     {
         echo "No gumball dispensed.\n";
     }
+
+    public function __toString()
+    {
+        return "waiting for turn a crank";
+    }
 }

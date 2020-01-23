@@ -33,4 +33,9 @@ class NoQuarterState implements State
     {
         // TODO: Implement dispense() method.
     }
+
+    public function __toString()
+    {
+        return "waiting for a quarter";
+    }
 }

@@ -40,4 +40,9 @@ class SoldState implements State
     }
 
     public function refill() {}
+
+    public function __toString()
+    {
+        return "dispensing a gumball";
+    }
 }
