@@ -82,9 +82,17 @@ class GumballMachine
         $this->getCount();
     }
 
+
+    public function refill(int $count)
+    {
+        $this->count += $count;
+        echo "The gumball machine was just refilled; it's new count is: " . $this->count;
+        $this->state->refill();
+    }
+
     public function __toString()
     {
-        echo "\nMighty Gumball, Inc."
+        $result = "\nMighty Gumball, Inc."
             . "\nPHP-enabled Standing Gumball Model #2004"
             . "\nInventory: " . $this->count . " gumball";
 
@@ -93,5 +101,7 @@ class GumballMachine
         }
 
         echo "\nMachine is " . $this->state . "\n";
+
+        return $result;
     }
 }

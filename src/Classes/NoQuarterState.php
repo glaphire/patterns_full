@@ -21,18 +21,20 @@ class NoQuarterState implements State
 
     public function ejectQuarter()
     {
-        // TODO: Implement ejectQuarter() method.
+        echo "You haven't insert a quarter.\n";
     }
 
     public function turnCrank()
     {
-        // TODO: Implement turnCrank() method.
+        echo "You turned, but there is no quarter.\n";
     }
 
     public function dispense()
     {
-        // TODO: Implement dispense() method.
+        echo "You need to pay first.\n";
     }
+
+    public function refill() {}
 
     public function __toString()
     {
