@@ -10,42 +10,11 @@ class Application
     {
         $gumballMachine = new GumballMachine(10);
 
-        echo $gumballMachine;
+        for ($i = 0; $i < 10; $i++) {
+            echo $gumballMachine;
 
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-
-        echo $gumballMachine;
-
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-
-        echo $gumballMachine;
-
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-
-        echo $gumballMachine;
-
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-
-        echo $gumballMachine;
-
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-        $gumballMachine->insertQuarter();
-        $gumballMachine->turnCrank();
-
-
-        echo $gumballMachine;
+            $gumballMachine->insertQuarter();
+            $gumballMachine->turnCrank();
+        }
     }
 }
