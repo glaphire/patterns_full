@@ -10,6 +10,7 @@ class GumballMachine
     private State $noQuarterState;
     private State $hasQuarterState;
     private State $soldState;
+    private State $winnerState;
 
     private State $state;
 
@@ -21,6 +22,7 @@ class GumballMachine
         $this->noQuarterState = new NoQuarterState($this);
         $this->hasQuarterState = new HasQuarterState($this);
         $this->soldState = new SoldState($this);
+        $this->winnerState = new WinnerState($this);
         $this->count = $numberGumballs;
 
         if ($numberGumballs > 0) {
@@ -77,9 +79,14 @@ class GumballMachine
         return $this->soldState;
     }
 
+    public function getWinnerState()
+    {
+        return $this->winnerState;
+    }
+
     public function getCount()
     {
-        $this->count;
+        return $this->count;
     }
 
 
@@ -97,7 +104,9 @@ class GumballMachine
             . "\nInventory: " . $this->count . " gumball";
 
         if ($this->count != 1) {
-            $result .= "s";
+            $result .= "s\n";
+        } else {
+            $result .= "\n";
         }
 
         echo "\nMachine is " . $this->state . "\n";

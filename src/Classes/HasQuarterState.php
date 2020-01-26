@@ -29,7 +29,13 @@ class HasQuarterState implements State
     public function turnCrank()
     {
         echo "You turned...\n";
-        $this->gumballMachine->setState($this->gumballMachine->getSoldState());
+
+        $winner = rand(0,3);
+        if ($winner == 0 && $this->gumballMachine->getCount() > 1) {
+            $this->gumballMachine->setState($this->gumballMachine->getWinnerState());
+        } else {
+            $this->gumballMachine->setState($this->gumballMachine->getSoldState());
+        }
     }
 
     public function dispense()

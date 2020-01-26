@@ -8,12 +8,14 @@ class Application
 {
     public function run()
     {
-        $gumballMachine = new GumballMachine(2);
+        $gumballMachine = new GumballMachine(10);
 
         echo $gumballMachine;
 
         $gumballMachine->insertQuarter();
         $gumballMachine->turnCrank();
+        $gumballMachine->insertQuarter();
+        $gumballMachine->turnCrank();
 
         echo $gumballMachine;
 
@@ -22,9 +24,27 @@ class Application
         $gumballMachine->insertQuarter();
         $gumballMachine->turnCrank();
 
-        $gumballMachine->refill(5);
+        echo $gumballMachine;
+
         $gumballMachine->insertQuarter();
         $gumballMachine->turnCrank();
+        $gumballMachine->insertQuarter();
+        $gumballMachine->turnCrank();
+
+        echo $gumballMachine;
+
+        $gumballMachine->insertQuarter();
+        $gumballMachine->turnCrank();
+        $gumballMachine->insertQuarter();
+        $gumballMachine->turnCrank();
+
+        echo $gumballMachine;
+
+        $gumballMachine->insertQuarter();
+        $gumballMachine->turnCrank();
+        $gumballMachine->insertQuarter();
+        $gumballMachine->turnCrank();
+
 
         echo $gumballMachine;
     }
