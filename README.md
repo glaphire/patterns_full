@@ -1,5 +1,5 @@
 
-##Patterns examples (proof of concept):
+## Patterns examples (proof of concept):
 
 Each branch represent example of using pattern. 
 Some patterns have more than one example (due to different learning sources).
@@ -15,3 +15,8 @@ Simple Factory: [designpatternsphp.readthedocs.io](https://github.com/glaphire/p
 Abstract Factory: [refactoring.guru - concept](https://github.com/glaphire/patterns_full/tree/AbstractFactory/src)
 
 Factory Method: [refactoring.guru - concept](https://github.com/glaphire/patterns_full/tree/FactoryMethod/src)
+
+Singleton: [refactoring.guru](https://github.com/glaphire/patterns_full/tree/Singleton/src), [designpatternsphp.readthedocs.io](https://github.com/glaphire/patterns_full/tree/SingletonUpdated/src)
+
+Command: [Headfirst](https://github.com/glaphire/patterns_full/tree/Command/src), [refactoring.guru - real world](https://github.com/glaphire/patterns_full/tree/RealWorldCommand/src)
+
