@@ -1,15 +1,13 @@
 <?php
 
-
 namespace App\Classes;
 
-
 use App\Classes\Parts\Car;
+use App\Classes\Parts\Door;
 use App\Classes\Parts\Engine;
 use App\Classes\Parts\Vehicle;
 use App\Classes\Parts\Wheel;
 use App\Interfaces\Builder;
-use App\Parts\Classes\Door;
 
 class CarBuilder implements Builder
 {

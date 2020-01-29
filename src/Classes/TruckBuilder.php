@@ -2,12 +2,12 @@
 
 namespace App\Classes;
 
+use App\Classes\Parts\Door;
 use App\Classes\Parts\Engine;
+use App\Classes\Parts\Truck;
 use App\Classes\Parts\Vehicle;
 use App\Classes\Parts\Wheel;
 use App\Interfaces\Builder;
-use App\Classes\Parts\Truck;
-use App\Parts\Classes\Door;
 
 class TruckBuilder implements Builder
 {
