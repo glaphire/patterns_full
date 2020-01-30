@@ -7,7 +7,7 @@ use Countable;
 class WorkerPool implements Countable
 {
     /**
-     * @var StringReverserWorker[]
+     * @var StringReverseWorker[]
      */
     private array $occupiedWorkers = [];
 
