@@ -25,9 +25,14 @@ abstract class Middleware
      */
     public function check(string $email, string $password): bool
     {
+        echo "This is " . static::class . PHP_EOL;
+
         if (!$this->next) {
+            echo "There is not next middleware in chain.\n";
             return true;
         }
+
+        echo "Going to next middleware.\n";
 
         return $this->next->check($email, $password);
     }
