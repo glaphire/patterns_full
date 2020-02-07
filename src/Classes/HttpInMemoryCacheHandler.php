@@ -19,7 +19,6 @@ class HttpInMemoryCacheHandler extends Handler
         $this->data = $data;
     }
 
-
     protected function processing(RequestInterface $request): ?string
     {
         $key = sprintf(
