@@ -44,6 +44,7 @@ class UserRepository implements Observer
         $user->update($data);
 
         $id = bin2hex(openssl_random_pseudo_bytes(16));
+        $user->update(["id" => $id]);
         $this->users[$id] = $user;
 
         if (!$silent) {
