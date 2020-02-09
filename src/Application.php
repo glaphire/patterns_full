@@ -10,6 +10,15 @@ class Application
 {
     public function run()
     {
+        /**
+         * event dispatcher -> mediator + publisher from observer pattern
+         * observer -> observer from observer pattern
+         * user repository -> component + observer
+         * user -> model
+         * logger -> component + observer
+         * onboarding notification -> component + observer
+         * events() -> event dispatcher singleton on drugs
+         */
         $repository = new UserRepository();
         events()->attach($repository, "facebook:update");
 

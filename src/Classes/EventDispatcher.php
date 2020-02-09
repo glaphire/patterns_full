@@ -4,6 +4,19 @@ namespace App\Classes;
 
 use App\Interfaces\Observer;
 
+/**
+ * Event Dispatcher acts as Mediator and contains
+ * subscribing and event logic. While classic
+ * Mediator depends on concrete components, this one
+ * is only tied to their abstract interfaces.
+ *
+ * The components themselves may subscribe to specific
+ * events that they are interested in via the Mediator's
+ * subscription interface.
+ *
+ * Class EventDispatcher
+ * @package App\Classes
+ */
 class EventDispatcher
 {
     /**
