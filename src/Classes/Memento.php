@@ -2,6 +2,11 @@
 
 namespace App\Classes;
 
+/**
+ * Class Memento
+ * Role: memento
+ * @package App\Classes
+ */
 class Memento
 {
     /**

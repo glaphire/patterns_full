@@ -1,7 +1,11 @@
 <?php
 
 namespace App\Classes;
-
+/**
+ * Class Ticket
+ * Role: originator
+ * @package App\Classes
+ */
 class Ticket
 {
     private State $currentState;
