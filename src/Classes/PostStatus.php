@@ -68,7 +68,7 @@ class PostStatus
 
     private static function ensureIsValidId(int $status)
     {
-        if (!in_array($status, array(self::$validStates), true)) {
+        if (!in_array($status, array_keys(self::$validStates), true)) {
             throw new InvalidArgumentException('Invalid status id given');
         }
     }
